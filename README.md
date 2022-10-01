@@ -63,11 +63,18 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  Trying to add a new by filling the then went to the inspect tool console found the 500 internal server error then network tab to get the details of the error NameError uninitialized constant TpysController::Toys
+  I corrected the error by removing the (s) form Toys to Toy and worked
+
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  Clicked the like button got an error Ungandled rejection(syntax error):unexpected end of Json input
+  I checked the controllerAction and render the Json
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  Clicked the delete button then rail server got the error details No route matches 
+  Checked the route.rb and added the destroy
